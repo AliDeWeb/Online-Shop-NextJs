@@ -9,7 +9,7 @@ import { BsShop } from "react-icons/bs";
 
 const MobileToolBar = () => {
   return (
-    <div className="sm:hidden flex items-center justify-evenly h-[60px] w-full px-5 py-2.5 bg-white z-50 fixed bottom-0 right-0 left-0 border-t border-solid border-[#eeeeee]">
+    <div className="sm:hidden flex items-center justify-evenly h-[60px] w-full px-5 py-2.5 bg-white z-30 fixed bottom-0 right-0 left-0 border-t border-solid border-[#eeeeee]">
       <Link href="/register" className="text-[#555555]">
         <CiUser size={"1.7em"} />
       </Link>
