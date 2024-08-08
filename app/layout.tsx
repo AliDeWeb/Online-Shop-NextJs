@@ -2,7 +2,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 
 // Fonts
-export const poppins = localFont({
+const poppins = localFont({
   src: [
     {
       path: "../public/fonts/poppins/Poppins-Regular.ttf",
@@ -17,7 +17,7 @@ export const poppins = localFont({
   ],
   variable: "--font-poppins",
 });
-export const montserrat = localFont({
+const montserrat = localFont({
   src: [
     {
       path: "../public/fonts/montserrat/Montserrat-Bold.ttf",

@@ -17,7 +17,12 @@ const megaMenuItems: { title: string; link: string }[] = [
   { title: "login", link: "/" },
 ];
 
-const HeaderIcons = () => {
+// Types
+interface HeaderIconsProps {
+  smallIcons?: boolean;
+}
+
+const HeaderIcons = ({ smallIcons }: HeaderIconsProps) => {
   // States
   const [isMegaMenuActive, setIsMegaMenuActive] =
     React.useState<boolean>(false);
@@ -28,9 +33,13 @@ const HeaderIcons = () => {
   }, []);
 
   return (
-    <div className="relative flex items-center gap-6 text-[#444444] hover:child:text-[#3474d4] child:transition-all">
+    <div
+      className={`relative flex items-center ${
+        !!smallIcons ? "gap-3" : "gap-6"
+      } text-[#444444] hover:child:text-[#3474d4] child:transition-all`}
+    >
       <button onClick={megaMenuStatusHandler}>
-        <CiUser size={"1.8em"} />
+        <CiUser size={`${!!smallIcons ? "1.4em" : "1.8em"}`} />
       </button>
       <MegaMenu
         items={megaMenuItems}
@@ -39,16 +48,24 @@ const HeaderIcons = () => {
       />
 
       <Link href={"/"} className="relative">
-        <span className="absolute -bottom-[6px] -right-[8px] size-5 rounded-full bg-[#777777] font-poppins flex items-center justify-center text-white text-sm">
+        <span
+          className={`absolute -bottom-[6px] -right-[8px] ${
+            !!smallIcons ? "size-4 text-xs" : "size-5 text-sm"
+          } rounded-full bg-[#777777] font-poppins flex items-center justify-center text-white`}
+        >
           6
         </span>
-        <CiHeart size={"1.8em"} />
+        <CiHeart size={`${!!smallIcons ? "1.4em" : "1.8em"}`} />
       </Link>
       <Link href={"/"} className="relative">
-        <span className="absolute -bottom-[6px] -right-[8px] size-5 rounded-full bg-[#777777] font-poppins flex items-center justify-center text-white text-sm">
+        <span
+          className={`absolute -bottom-[6px] -right-[8px] ${
+            !!smallIcons ? "size-4 text-xs" : "size-5 text-sm"
+          } rounded-full bg-[#777777] font-poppins flex items-center justify-center text-white`}
+        >
           6
         </span>
-        <PiShoppingCartSimple size={"1.6em"} />
+        <PiShoppingCartSimple size={`${!!smallIcons ? "1.4em" : "1.6em"}`} />
       </Link>
     </div>
   );
