@@ -2,6 +2,7 @@ import React from "react";
 
 // Components
 import HeaderIcons from "./HeaderIcons";
+import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 
 // Icons
 import { IoIosMenu } from "react-icons/io";
@@ -13,6 +14,7 @@ const MobileNav = () => {
         <button className="text-[#444444] flex items-center justify-between  ">
           <IoIosMenu size={"1.4em"} />
         </button>
+        <HamburgerMenu />
       </div>
       <div>
         <HeaderIcons smallIcons={true} />
