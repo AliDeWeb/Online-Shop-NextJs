@@ -1,10 +1,13 @@
+import Link from "next/link"
+import Image from "next/image";
+
+
 // Components
 import Search from "../Forms/Search";
 import HeaderIcons from "./HeaderIcons";
 import MobileNav from "./MobileNav";
 
 // Images
-import Image from "next/image";
 import logo from "@/public/icons/logo.png";
 
 // Contexts
@@ -20,14 +23,16 @@ const Header = () => {
         <div className="container">
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-0 items-center justify-between">
             <div>
-              <Image
-                priority={true}
-                src={logo}
-                alt="site logo"
-                width={130}
-                height={40}
-                className="w-[130px] h-10"
-              />
+              <Link href="/">
+                <Image
+                  priority={true}
+                  src={logo}
+                  alt="site logo"
+                  width={130}
+                  height={40}
+                  className="w-[130px] h-10"
+                />
+              </Link>
             </div>
             <div>
               <Search />

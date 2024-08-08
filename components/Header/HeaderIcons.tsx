@@ -12,9 +12,9 @@ import MegaMenu from "../MegaMenu/MegaMenu";
 
 // Data
 const megaMenuItems: { title: string; link: string }[] = [
-  { title: "register", link: "/" },
+  { title: "register", link: "/register" },
   { title: "checkout", link: "/" },
-  { title: "login", link: "/" },
+  { title: "login", link: "/login" },
 ];
 
 // Types
