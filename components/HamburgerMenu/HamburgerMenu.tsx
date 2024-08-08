@@ -12,7 +12,7 @@ import Overlay from "../Overlay/Overlay";
 // Icons
 import { IoClose } from "react-icons/io5";
 import { TbBrandGithubFilled } from "react-icons/tb";
-import { FaTwitter } from "react-icons/fa6";
+import { FaTwitter, FaGreaterThan } from "react-icons/fa6";
 
 const HamburgerMenu = () => {
   // Context
@@ -32,13 +32,70 @@ const HamburgerMenu = () => {
         } z-50 transition-all`}
       >
         <div>
-          <div className="flex items-center justify-between  pb-2.5 border-b-2 border-solid border-[#eeeeee]">
+          <div className="flex items-center justify-between  pb-2.5 border-b-2 border-solid border-[#eeeeee] mb-2.5">
             <h2 className="text-[#3474d4] text-lg font-poppins font-bold">
               My Menu
             </h2>
             <button className="text-[#555555]" onClick={closeMenuHandler}>
               <IoClose size={"1.4em"} />
             </button>
+          </div>
+          <div>
+            <ul className="child:py-2.5 child:px-1 divide-y divide-solid divide-[#eeeeee]">
+              <li>
+                <Link
+                  href="/"
+                  className="text-[#444444] font-poppins font-bold text-sm"
+                >
+                  <span>Home</span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-[#444444] font-poppins font-bold text-sm flex items-center justify-between"
+                >
+                  <span>Categories</span>
+                  <FaGreaterThan size={"0.8em"} />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-[#444444] font-poppins font-bold text-sm flex items-center justify-between"
+                >
+                  <span>Products</span>
+                  <FaGreaterThan size={"0.8em"} />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-[#444444] font-poppins font-bold text-sm flex items-center justify-between"
+                >
+                  <span>Others</span>
+                  <FaGreaterThan size={"0.8em"} />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-[#444444] font-poppins font-bold text-sm flex items-center justify-between"
+                >
+                  <span>Blog</span>
+                  <FaGreaterThan size={"0.8em"} />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-[#444444] font-poppins font-bold text-sm flex items-center justify-between"
+                >
+                  <span>Hot Offers</span>
+                  <FaGreaterThan size={"0.8em"} />
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="flex items-center justify-center gap-2.5 py-4 border-t border-solid border-[#eeeeee]">
