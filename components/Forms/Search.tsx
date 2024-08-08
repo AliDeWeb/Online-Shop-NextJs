@@ -18,7 +18,7 @@ const Search = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-between w-[500px] px-4 py-2.5 border border-solid border-[#3474d4] text-[#555555]">
+    <div className="flex items-center justify-between w-[320px] lg:w-[500px] px-4 py-2.5 border border-solid border-[#3474d4] text-[#555555]">
       <input
         ref={searchInput}
         type="text"

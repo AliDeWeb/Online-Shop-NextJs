@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 // Components
 import Search from "../Forms/Search";
 import HeaderIcons from "./HeaderIcons";
@@ -12,7 +10,7 @@ const Header = () => {
   return (
     <header className="py-[25px] border-b border-solid border-black/5">
       <div className="container">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-0 items-center justify-between">
           <div>
             <Image
               src={logo}
@@ -25,7 +23,7 @@ const Header = () => {
           <div>
             <Search />
           </div>
-          <div>
+          <div className="hidden lg:block">
             <HeaderIcons />
           </div>
         </div>
