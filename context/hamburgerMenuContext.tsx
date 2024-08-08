@@ -3,7 +3,7 @@
 import React from "react";
 
 export const hamburgerMenuContext = React.createContext({
-  isHamburgerMenuOpen: true,
+  isHamburgerMenuOpen: false,
   setIsHamburgerMenuOpen: (open: boolean) => {},
 });
 
@@ -12,8 +12,7 @@ const HamburgerMenuProvider = ({
 }: {
   children: JSX.Element;
 }): JSX.Element => {
-  // TODO: "this should be false"
-  const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] = React.useState(true);
+  const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] = React.useState(false);
 
   return (
     <hamburgerMenuContext.Provider
