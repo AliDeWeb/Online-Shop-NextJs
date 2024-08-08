@@ -13,7 +13,7 @@ import { PiShoppingCartSimple } from "react-icons/pi";
 
 const Header = () => {
   return (
-    <header className="py-[25px]">
+    <header className="py-[25px] border-b border-solid border-black/5">
       <div className="container">
         <div className="flex items-center justify-between">
           <div>
