@@ -33,7 +33,6 @@ const montserrat = localFont({
   variable: "--font-montserrat",
 });
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -41,7 +40,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${montserrat.variable}`}>
+      <body
+        className={`${poppins.variable} ${montserrat.variable} pb-16 sm:pb-0`}
+      >
         {children}
       </body>
     </html>
