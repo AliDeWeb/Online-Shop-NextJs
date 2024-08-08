@@ -2,18 +2,15 @@ import Link from "next/link";
 
 // Components
 import Search from "../Forms/Search";
+import HeaderIcons from "./HeaderIcons";
 
 // Images
 import Image from "next/image";
 import logo from "@/public/icons/logo.png";
 
-// Icons
-import { CiUser, CiHeart } from "react-icons/ci";
-import { PiShoppingCartSimple } from "react-icons/pi";
-
 const Header = () => {
   return (
-    <header className="py-[25px]">
+    <header className="py-[25px] border-b border-solid border-black/5">
       <div className="container">
         <div className="flex items-center justify-between">
           <div>
@@ -28,24 +25,8 @@ const Header = () => {
           <div>
             <Search />
           </div>
-          <div className="flex items-center gap-6 text-[##444444] hover:child:text-[#3474d4] child:transition-all">
-            <Link href={"/"}>
-              <CiUser size={"1.6em"} />
-            </Link>
-
-            <Link href={"/"} className="relative">
-              <span className="absolute -bottom-[6px] -right-[8px] size-5 rounded-full bg-[#777777] font-poppins flex items-center justify-center text-white text-sm">
-                6
-              </span>
-              <CiHeart size={"1.8em"} />
-            </Link>
-
-            <Link href={"/"} className="relative">
-              <span className="absolute -bottom-[6px] -right-[8px] size-5 rounded-full bg-[#777777] font-poppins flex items-center justify-center text-white text-sm">
-                6
-              </span>
-              <PiShoppingCartSimple size={"1.6em"} />
-            </Link>
+          <div>
+            <HeaderIcons />
           </div>
         </div>
       </div>
