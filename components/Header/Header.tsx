@@ -13,11 +13,11 @@ import HamburgerMenuProvider from "@/context/hamburgerMenuContext";
 const Header = () => {
   return (
     <HamburgerMenuProvider>
-      <header className="pb-[25px] sm:py-[25px] border-b border-solid border-black/5">
+      <header className="pb-[25px] lg:py-[25px] border-b border-solid border-black/5">
+        <div className="lg:hidden">
+          <MobileNav />
+        </div>
         <div className="container">
-          <div className="sm:hidden">
-            <MobileNav />
-          </div>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-0 items-center justify-between">
             <div>
               <Image

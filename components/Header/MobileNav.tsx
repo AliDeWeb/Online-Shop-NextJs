@@ -22,18 +22,22 @@ const MobileNav = () => {
   }, []);
 
   return (
-    <div className="py-4 mb-2.5 flex items-center justify-between border-b border-solid border-black/5">
-      <div className="flex items-center justify-between">
-        <button
-          onClick={openMenuHandler}
-          className="text-[#444444] flex items-center justify-between  "
-        >
-          <IoIosMenu size={"1.4em"} />
-        </button>
-        <HamburgerMenu />
-      </div>
-      <div>
-        <HeaderIcons smallIcons={true} />
+    <div className="border-b border-solid border-black/5 mb-2.5">
+      <div className="container">
+        <div className="py-4 flex items-center justify-between">
+          <div className="flex items-center justify-between">
+            <button
+              onClick={openMenuHandler}
+              className="text-[#444444] flex items-center justify-between  "
+            >
+              <IoIosMenu size={"1.4em"} />
+            </button>
+            <HamburgerMenu />
+          </div>
+          <div>
+            <HeaderIcons smallIcons={true} />
+          </div>
+        </div>
       </div>
     </div>
   );
