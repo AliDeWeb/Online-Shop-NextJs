@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Login = () => {
   return (
-    <div className="min-h-[80dvh] md:min-h-[100dvh] flex items-center justify-center">
+    <div className="py-5 min-h-[100dvh] flex items-center justify-center">
       <div className="w-full flex flex-col items-center">
         <div>
           <h1 className="text-[#555555] font-poppins font-bold text-center text-3xl">
