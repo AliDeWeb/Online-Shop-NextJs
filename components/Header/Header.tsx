@@ -1,7 +1,7 @@
 // Components
 import Search from "../Forms/Search";
 import HeaderIcons from "./HeaderIcons";
-import MobileNav from "./mobileNav";
+import MobileNav from "./MobileNav";
 
 // Images
 import Image from "next/image";
