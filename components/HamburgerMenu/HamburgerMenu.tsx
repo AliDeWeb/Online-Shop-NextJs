@@ -29,7 +29,7 @@ const HamburgerMenu = () => {
       <div
         className={`w-[300px] h-[100dvh] flex flex-col justify-between p-4 bg-white fixed top-0 bottom-0 ${
           isHamburgerMenuOpen ? "left-0" : "-left-[300px]"
-        } z-50 transition-all`}
+        } z-50 transition-all duration-300`}
       >
         <div>
           <div className="flex items-center justify-between  pb-2.5 border-b-2 border-solid border-[#eeeeee] mb-2.5">
