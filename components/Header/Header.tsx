@@ -17,6 +17,7 @@ const Header = () => {
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-0 items-center justify-between">
           <div>
             <Image
+              priority={true}
               src={logo}
               alt="site logo"
               width={130}
