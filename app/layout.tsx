@@ -40,7 +40,6 @@ const montserrat = localFont({
 
 // Components
 import Header from '@/components/Header/Header';
-import MobileToolBar from '@/components/MobileToolBar/MobileToolBar';
 
 export default function RootLayout({
   children,
@@ -62,7 +61,6 @@ export default function RootLayout({
       >
         <Header />
         {children}
-        <MobileToolBar />
       </body>
     </html>
   );

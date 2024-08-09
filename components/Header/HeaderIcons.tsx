@@ -22,14 +22,23 @@ interface HeaderIconsProps {
   smallIcons?: boolean;
 }
 
+// Context
+import { cartMenuContext } from '@/context/cartMenuContext';
+
 const HeaderIcons = ({ smallIcons }: HeaderIconsProps) => {
   // States
   const [isMegaMenuActive, setIsMegaMenuActive] =
     React.useState<boolean>(false);
 
+  // Context
+  const { setIsCartMenuOpen } = React.useContext(cartMenuContext);
+
   // Callbacks
   const megaMenuStatusHandler = React.useCallback(() => {
     setIsMegaMenuActive((prev: boolean) => !prev);
+  }, []);
+  const cartMenuStatusHandler = React.useCallback(() => {
+    setIsCartMenuOpen(true);
   }, []);
 
   return (
@@ -58,7 +67,7 @@ const HeaderIcons = ({ smallIcons }: HeaderIconsProps) => {
         </span>
         <CiHeart size={`${!!smallIcons ? '1.4em' : '1.8em'}`} />
       </Link>
-      <Link href={'/'} className="relative">
+      <button className="relative" onClick={cartMenuStatusHandler}>
         <span
           className={`absolute -bottom-[6px] -right-[8px] ${
             !!smallIcons ? 'size-4 text-xs' : 'size-5 text-sm'
@@ -67,7 +76,7 @@ const HeaderIcons = ({ smallIcons }: HeaderIconsProps) => {
           6
         </span>
         <PiShoppingCartSimple size={`${!!smallIcons ? '1.4em' : '1.6em'}`} />
-      </Link>
+      </button>
     </div>
   );
 };
