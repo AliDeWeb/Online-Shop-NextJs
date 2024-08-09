@@ -31,7 +31,7 @@ const Newsletter = () => {
   return (
     <div>
       <div
-        className={`${isOpen ? 'visible opacity-100' : 'invisible opacity-0'} fixed left-1/2 top-1/2 z-50 mx-5 w-[700px] -translate-x-1/2 -translate-y-1/2 bg-white bg-[url('/images/newsletter-bg.png')] bg-cover bg-center bg-no-repeat p-[30px] transition-all`}
+        className={`${isOpen ? 'visible opacity-100' : 'invisible opacity-0'} fixed left-1/2 top-1/2 z-50 mx-auto w-[350px] -translate-x-1/2 -translate-y-1/2 bg-white bg-[url('/images/newsletter-bg.png')] bg-cover bg-center bg-no-repeat p-[30px] transition-all md:w-[700px]`}
       >
         <button
           onClick={closeNewsletterModalHandler}
@@ -48,7 +48,7 @@ const Newsletter = () => {
         </p>
         <input
           type="text"
-          className="mx-auto my-4 block h-[45px] w-[305px] rounded-[30px] border border-solid border-[#ededed] bg-white px-4 font-poppins font-normal text-[#444444] outline-none"
+          className="mx-auto my-4 block h-[45px] w-[270px] rounded-[30px] border border-solid border-[#ededed] bg-white px-4 font-poppins font-normal text-[#444444] outline-none md:w-[305px]"
           placeholder="Email Address"
         />
         <button className="mx-auto block h-10 w-max rounded-[30px] bg-[#3474d4] px-4 font-poppins font-bold text-white">
