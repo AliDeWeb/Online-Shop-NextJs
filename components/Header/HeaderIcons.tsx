@@ -44,6 +44,7 @@ const HeaderIcons = ({ smallIcons }: HeaderIconsProps) => {
       <MegaMenu
         items={megaMenuItems}
         isActive={isMegaMenuActive}
+        setIsActive={setIsMegaMenuActive}
         className="absolute -bottom-[116px] -left-[100px]"
       />
 
