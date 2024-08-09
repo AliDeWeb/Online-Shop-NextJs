@@ -6,8 +6,15 @@ export const metadata: Metadata = {
   title: 'Ekka - Home',
 };
 
+// Components
+import Newsletter from '@/components/Newsletter/Newsletter';
+
 const Home = () => {
-  return <></>;
+  return (
+    <>
+      <Newsletter />
+    </>
+  );
 };
 
 export default Home;
