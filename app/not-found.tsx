@@ -13,17 +13,22 @@ export const metadata: Metadata = {
 import icon404 from "@/public/icons/404.png";
 
 const NotFound = () => {
+  // Refs
+  const section404 = React.useRef<null | HTMLDivElement>(null);
+
   // Effects
   React.useEffect(() => {
-    location.hash = "#404-section";
+    if (!section404) return;
+
+    section404.current?.scrollIntoView();
   }, []);
 
   return (
     <div
-      id="404-section"
+      ref={section404}
       className="py-5 min-h-[100dvh] flex items-center justify-center"
     >
-      <div className="w-full flex flex-col items-center">
+      <div className="w-full flex flex-col items-center px-5">
         <Image
           src={icon404}
           alt="icon 404"
