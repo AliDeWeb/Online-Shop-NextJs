@@ -10,7 +10,18 @@ import { IoClose } from 'react-icons/io5';
 
 const Newsletter = () => {
   // States
-  const [isOpen, setIsOpen] = React.useState<boolean>(true);
+  const [isOpen, setIsOpen] = React.useState<boolean>(false);
+
+  // Effects
+  React.useEffect(() => {
+    const hasNewsletterBeenOpened = JSON.parse(
+      sessionStorage.getItem('hasNewsletterBeenOpened') || 'false',
+    );
+
+    if (!hasNewsletterBeenOpened) setIsOpen(true);
+
+    sessionStorage.setItem('hasNewsletterBeenOpened', JSON.stringify(true));
+  }, []);
 
   // Callbacks
   const closeNewsletterModalHandler = React.useCallback(() => {
