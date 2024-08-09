@@ -1,25 +1,25 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  mode: "jit",
+  mode: 'jit',
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    container: { center: true, padding: "1rem" },
+    container: { center: true, padding: '1rem' },
     extend: {
       fontFamily: {
-        poppins: ["var(--font-poppins)"],
-        montserrat: ["var(--font-montserrat)"],
+        poppins: ['var(--font-poppins)'],
+        montserrat: ['var(--font-montserrat)'],
       },
     },
   },
   plugins: [
     function ({ addVariant }: { addVariant: any }) {
-      addVariant("child", "& > *");
-      addVariant("child-hover", "& > *:hover");
+      addVariant('child', '& > *');
+      addVariant('child-hover', '& > *:hover');
     },
   ],
 };

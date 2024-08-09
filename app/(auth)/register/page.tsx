@@ -1,23 +1,23 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 const Register = () => {
   return (
-    <div className="py-5 min-h-[100dvh] flex items-center justify-center">
-      <div className="w-full flex flex-col items-center">
+    <div className="flex min-h-[100dvh] items-center justify-center py-5">
+      <div className="flex w-full flex-col items-center">
         <div>
-          <h1 className="text-[#555555] font-poppins font-bold text-center text-3xl">
+          <h1 className="text-center font-poppins text-3xl font-bold text-[#555555]">
             Register
           </h1>
-          <p className="text-[#777777] font-poppins font-light text-sm text-center mt-4">
+          <p className="mt-4 text-center font-poppins text-sm font-light text-[#777777]">
             Best place to buy and sell digital products
           </p>
         </div>
-        <div className="mt-[30px] w-full flex justify-center px-5">
-          <form className="py-[34px] px-[38px] border border-solid border-[#ededed] sm:w-[500px] w-full flex flex-col">
+        <div className="mt-[30px] flex w-full justify-center px-5">
+          <form className="flex w-full flex-col border border-solid border-[#ededed] px-[38px] py-[34px] sm:w-[500px]">
             <label
               htmlFor="phone"
-              className="font-poppins font-bold text-[#444444] mb-2.5"
+              className="mb-2.5 font-poppins font-bold text-[#444444]"
             >
               Phone Number*
             </label>
@@ -25,12 +25,12 @@ const Register = () => {
               id="phone"
               type="text"
               placeholder="Enter your phone num..."
-              className="outline-none mb-[30px] px-4 h-[50px] border border-solid border-[#eeeeee] font-poppins text-sm text-[#777777]"
+              className="mb-[30px] h-[50px] border border-solid border-[#eeeeee] px-4 font-poppins text-sm text-[#777777] outline-none"
             />
 
             <label
               htmlFor="email"
-              className="font-poppins font-bold text-[#444444] mb-2.5"
+              className="mb-2.5 font-poppins font-bold text-[#444444]"
             >
               Email Address
             </label>
@@ -38,12 +38,12 @@ const Register = () => {
               id="email"
               type="text"
               placeholder="Enter your email add..."
-              className="outline-none mb-[30px] px-4 h-[50px] border border-solid border-[#eeeeee] font-poppins text-sm text-[#777777]"
+              className="mb-[30px] h-[50px] border border-solid border-[#eeeeee] px-4 font-poppins text-sm text-[#777777] outline-none"
             />
 
             <label
               htmlFor="name"
-              className="font-poppins font-bold text-[#444444] mb-2.5"
+              className="mb-2.5 font-poppins font-bold text-[#444444]"
             >
               Full Name
             </label>
@@ -51,12 +51,12 @@ const Register = () => {
               id="name"
               type="text"
               placeholder="Enter your name..."
-              className="outline-none mb-[30px] px-4 h-[50px] border border-solid border-[#eeeeee] font-poppins text-sm text-[#777777]"
+              className="mb-[30px] h-[50px] border border-solid border-[#eeeeee] px-4 font-poppins text-sm text-[#777777] outline-none"
             />
 
             <label
               htmlFor="password"
-              className="font-poppins font-bold text-[#444444] mb-2.5"
+              className="mb-2.5 font-poppins font-bold text-[#444444]"
             >
               Password*
             </label>
@@ -64,12 +64,12 @@ const Register = () => {
               id="password"
               type="password"
               placeholder="Enter your password..."
-              className="outline-none mb-[30px] px-4 h-[50px] border border-solid border-[#eeeeee] font-poppins text-sm text-[#777777]"
+              className="mb-[30px] h-[50px] border border-solid border-[#eeeeee] px-4 font-poppins text-sm text-[#777777] outline-none"
             />
 
             <Link
               href="/"
-              className="text-[#444444] font-poppins font-normal text-sm"
+              className="font-poppins text-sm font-normal text-[#444444]"
             >
               Forgot Password?
             </Link>
@@ -77,12 +77,12 @@ const Register = () => {
             <div className="mt-4 flex flex-col items-center justify-center gap-4">
               <button
                 type="submit"
-                className="flex items-center justify-center h-10 w-[150px] font-poppins font-bold bg-[#3474d4] text-xl text-white"
+                className="flex h-10 w-[150px] items-center justify-center bg-[#3474d4] font-poppins text-xl font-bold text-white"
               >
                 REGISTER
               </button>
               <Link
-                className="flex items-center justify-center h-10 w-[150px] font-poppins font-bold bg-[#555555] text-xl text-white"
+                className="flex h-10 w-[150px] items-center justify-center bg-[#555555] font-poppins text-xl font-bold text-white"
                 href="/login"
               >
                 LOGIN

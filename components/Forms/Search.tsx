@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import React from "react";
+import React from 'react';
 
 // Icons
-import { IoSearchOutline } from "react-icons/io5";
+import { IoSearchOutline } from 'react-icons/io5';
 
 const Search = () => {
   // Refs
@@ -18,18 +18,18 @@ const Search = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-between w-[320px] lg:w-[500px] px-4 py-2.5 border border-solid border-[#3474d4] text-[#555555]">
+    <div className="flex w-[320px] items-center justify-between border border-solid border-[#3474d4] px-4 py-2.5 text-[#555555] lg:w-[500px]">
       <input
         ref={searchInput}
         type="text"
         placeholder="search products..."
-        className={`font-poppins font-normal text-sm outline-none border-none w-[calc(100%-30px)]`}
+        className={`w-[calc(100%-30px)] border-none font-poppins text-sm font-normal outline-none`}
       />
       <button
         onClick={searchHandler}
-        className="hover:text-[#3474d4] cursor-pointer transition-all"
+        className="cursor-pointer transition-all hover:text-[#3474d4]"
       >
-        <IoSearchOutline size={"1.4em"} />
+        <IoSearchOutline size={'1.4em'} />
       </button>
     </div>
   );

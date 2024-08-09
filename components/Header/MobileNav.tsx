@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import React from "react";
+import React from 'react';
 
 // Components
-import HeaderIcons from "./HeaderIcons";
-import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
+import HeaderIcons from './HeaderIcons';
+import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
 
 // Contexts
-import { hamburgerMenuContext } from "@/context/hamburgerMenuContext";
+import { hamburgerMenuContext } from '@/context/hamburgerMenuContext';
 
 // Icons
-import { IoIosMenu } from "react-icons/io";
+import { IoIosMenu } from 'react-icons/io';
 
 const MobileNav = () => {
   // Context
@@ -22,15 +22,15 @@ const MobileNav = () => {
   }, []);
 
   return (
-    <div className="border-b border-solid border-black/5 mb-2.5">
+    <div className="mb-2.5 border-b border-solid border-black/5">
       <div className="container">
-        <div className="py-4 flex items-center justify-between">
+        <div className="flex items-center justify-between py-4">
           <div className="flex items-center justify-between">
             <button
               onClick={openMenuHandler}
-              className="text-[#444444] flex items-center justify-between  "
+              className="flex items-center justify-between text-[#444444]"
             >
-              <IoIosMenu size={"1.4em"} />
+              <IoIosMenu size={'1.4em'} />
             </button>
             <HamburgerMenu />
           </div>

@@ -1,27 +1,26 @@
-import Link from "next/link"
-import Image from "next/image";
-
+import Link from 'next/link';
+import Image from 'next/image';
 
 // Components
-import Search from "../Forms/Search";
-import HeaderIcons from "./HeaderIcons";
-import MobileNav from "./MobileNav";
+import Search from '../Forms/Search';
+import HeaderIcons from './HeaderIcons';
+import MobileNav from './MobileNav';
 
 // Images
-import logo from "@/public/icons/logo.png";
+import logo from '@/public/icons/logo.png';
 
 // Contexts
-import HamburgerMenuProvider from "@/context/hamburgerMenuContext";
+import HamburgerMenuProvider from '@/context/hamburgerMenuContext';
 
 const Header = () => {
   return (
     <HamburgerMenuProvider>
-      <header className="pb-[25px] lg:py-[25px] border-b border-solid border-black/5">
+      <header className="border-b border-solid border-black/5 pb-[25px] lg:py-[25px]">
         <div className="lg:hidden">
           <MobileNav />
         </div>
         <div className="container">
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-0 items-center justify-between">
+          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row sm:gap-0">
             <div>
               <Link href="/">
                 <Image
@@ -30,7 +29,7 @@ const Header = () => {
                   alt="site logo"
                   width={130}
                   height={40}
-                  className="w-[130px] h-10"
+                  className="h-10 w-[130px]"
                 />
               </Link>
             </div>

@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 // Components
-import Header from "@/components/Header/Header";
-import MobileToolBar from "@/components/MobileToolBar/MobileToolBar";
+import Header from '@/components/Header/Header';
+import MobileToolBar from '@/components/MobileToolBar/MobileToolBar';
 
 const Template = ({ children }: { children: JSX.Element }) => {
   return (
