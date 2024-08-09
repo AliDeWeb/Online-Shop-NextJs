@@ -38,6 +38,10 @@ const montserrat = localFont({
   variable: '--font-montserrat',
 });
 
+// Components
+import Header from '@/components/Header/Header';
+import MobileToolBar from '@/components/MobileToolBar/MobileToolBar';
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -56,7 +60,9 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${montserrat.variable} pb-16 sm:pb-0`}
       >
+        <Header />
         {children}
+        <MobileToolBar />
       </body>
     </html>
   );
