@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛒 **Next.js & Nest.js E-Commerce Project**
 
-## Getting Started
+👋 Welcome to our full-featured e-commerce project built with **Next.js** for the front-end and **Nest.js** for the back-end! This project is **Open Source** and licensed under the **MIT** License.
 
-First, run the development server:
+## 🎯 **Key Features**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 🚀 **Modern Front-End:** Utilizing Next.js for a fast and optimized user experience.
+- 🔧 **Powerful Back-End:** Developed with Nest.js for easy data management and high security.
+- 📦 **Scalability:** Designed to handle both large and small e-commerce needs.
+- 🌍 **Multi-Language Support:** Capability to add and support multiple languages.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔗 **Useful Links**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Front-End Project (Next.js)](https://github.com/AliDeWeb/Online-Shop-NextJs)
+- [Back-End Project (Nest.js)](https://github.com/AliDeWeb/Online-shop-nestJs)
+- [Demo Website](https://online-shop-next-js-fawn.vercel.app)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 💻 **Setup and Installation**
 
-## Learn More
+To get started with this project, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repositories:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   $ git clone https://github.com/AliDeWeb/Online-Shop-NextJs.git
+   $ git clone https://github.com/AliDeWeb/Online-shop-nestJs.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. **Install dependencies:**
 
-## Deploy on Vercel
+   ```bash
+   $ cd ${frontend-dir}
+   $ npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Install dependencies:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   $ npm run dev
+   ```
+
+   To run backend on your local system see [Backend Installation](https://github.com/AliDeWeb/Online-shop-nestJs).
+
+## 🔄 **Updates and Contributions**
+
+If you'd like to propose changes or updates, please open a Pull Request. For issues and questions, use Issues.
+
+## 📄 **License**
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+<br />
+<br />
+
+🎉 Your project with Next.js and Nest.js is now ready! Enjoy working with it and good luck! 🚀
