@@ -7,6 +7,7 @@ import { IoClose } from 'react-icons/io5';
 
 // Components
 import Overlay from '../Overlay/Overlay';
+import CartMenuProductBox from './CartMenuProductBox';
 
 // Context
 import CartMenuProvider, { cartMenuContext } from '@/context/cartMenuContext';
@@ -39,7 +40,10 @@ const CartMenu = () => {
               </button>
             </div>
             <div>
-              <ul className="divide-y divide-solid divide-[#eeeeee] child:px-1 child:py-2.5"></ul>
+              <ul className="divide-y divide-solid divide-[#eeeeee] child:px-1 child:py-2.5">
+                <CartMenuProductBox />
+                <CartMenuProductBox />
+              </ul>
             </div>
           </div>
         </div>
