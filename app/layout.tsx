@@ -10,6 +10,11 @@ const poppins = localFont({
       style: "normal",
     },
     {
+      path: "../public/fonts/poppins/Poppins-Bold.ttf",
+      weight: "700",
+      style: "bold",
+    },
+    {
       path: "../public/fonts/poppins/Poppins-Light.ttf",
       weight: "300",
       style: "light",
