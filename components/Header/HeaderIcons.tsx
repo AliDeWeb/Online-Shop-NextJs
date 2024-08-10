@@ -54,7 +54,7 @@ const HeaderIcons = ({ smallIcons }: HeaderIconsProps) => {
         items={megaMenuItems}
         isActive={isMegaMenuActive}
         setIsActive={setIsMegaMenuActive}
-        className="absolute -bottom-[116px] -left-[100px]"
+        className="absolute -bottom-[116px] -left-[100px] z-50"
       />
 
       <Link href={'/'} className="relative">

@@ -45,6 +45,7 @@ const montserrat = localFont({
 
 // Components
 import Header from '@/components/Header/Header';
+import Navbar from '@/components/Navbar/Navbar';
 
 export default function RootLayout({
   children,
@@ -65,6 +66,7 @@ export default function RootLayout({
         className={`${poppins.variable} ${montserrat.variable} pb-16 sm:pb-0`}
       >
         <Header />
+        <Navbar />
         {children}
       </body>
     </html>
