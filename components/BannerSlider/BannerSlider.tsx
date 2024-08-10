@@ -18,7 +18,7 @@ const BannerSlider = () => {
     AOS.init({
       startEvent: 'DOMContentLoaded',
       once: false,
-      duration: 500,
+      duration: 800,
       delay: 30,
     });
   }, []);
@@ -29,7 +29,7 @@ const BannerSlider = () => {
         loop
         autoplay={{
           stopOnLastSlide: false,
-          delay: 2500,
+          delay: 5500,
           pauseOnMouseEnter: true,
         }}
         modules={[Autoplay, Navigation, A11y]}

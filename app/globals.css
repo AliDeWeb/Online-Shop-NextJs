@@ -6,3 +6,21 @@
   scroll-behavior: smooth;
   user-select: none;
 }
+
+/* SwiperJs Custom Navigation Btn */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: transparent !important;
+  right: 10px !important;
+  padding: 30px !important;
+  color: #00000020 !important;
+  fill: #00000020 !important;
+  stroke: #00000020 !important;
+  transition: all ease-in-out 150ms;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #00000060 !important;
+  fill: #00000060 !important;
+  stroke: #00000060 !important;
+}
