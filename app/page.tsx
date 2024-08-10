@@ -8,11 +8,13 @@ export const metadata: Metadata = {
 
 // Components
 import Newsletter from '@/components/Newsletter/Newsletter';
+import BannerSlider from '@/components/BannerSlider/BannerSlider';
 
 const Home = () => {
   return (
     <>
       <Newsletter />
+      <BannerSlider />
     </>
   );
 };

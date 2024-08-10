@@ -25,6 +25,11 @@ const poppins = localFont({
 const montserrat = localFont({
   src: [
     {
+      path: '../public/fonts/montserrat/Montserrat-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
       path: '../public/fonts/montserrat/Montserrat-Bold.ttf',
       weight: '700',
       style: 'bold',
