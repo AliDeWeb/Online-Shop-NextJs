@@ -12,7 +12,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav>
+    <nav className="hidden lg:block">
       <div className="container">
         <div className="flex h-[50px] items-center justify-between">
           <div>
@@ -21,7 +21,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div>
-            <ul className="flex items-center gap-16 font-poppins font-bold uppercase text-[#444444]">
+            <ul className="flex items-center gap-14 font-poppins text-sm font-bold uppercase text-[#444444]">
               <li>
                 <Link
                   href="/"
