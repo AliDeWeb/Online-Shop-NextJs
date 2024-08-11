@@ -1,10 +1,11 @@
+# Folders
 node_modules
 build
 public
 .git
 .next
 
-# files
+# Files
 package.json
 package-lock.json
 next.config.mjs
