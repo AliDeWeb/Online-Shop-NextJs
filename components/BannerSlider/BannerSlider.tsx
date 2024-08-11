@@ -8,21 +8,7 @@ import { Autoplay, Navigation, A11y } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-// AosCss
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 const BannerSlider = () => {
-  // Effects
-  React.useEffect(() => {
-    AOS.init({
-      startEvent: 'DOMContentLoaded',
-      once: false,
-      duration: 800,
-      delay: 30,
-    });
-  }, []);
-
   return (
     <div>
       <Swiper
@@ -36,7 +22,6 @@ const BannerSlider = () => {
         spaceBetween={10}
         slidesPerView={1}
         navigation
-        onSlideChange={() => AOS.refresh()}
       >
         <SwiperSlide>
           <div className="h-[300px] w-full bg-[url('/images/banner/banner1.jpg')] bg-cover bg-center bg-no-repeat sm:h-[510px] lg:h-[760px]">
