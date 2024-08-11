@@ -15,7 +15,9 @@ import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+// Icons
+import { MdExpandMore } from 'react-icons/md';
 
 const Footer = () => {
   // States
@@ -153,7 +155,7 @@ const Footer = () => {
             onChange={handleChange('panel1')}
           >
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<MdExpandMore size={'1.2em'} />}
               aria-controls="panel1bh-content"
               id="panel1bh-header"
             >
@@ -205,7 +207,7 @@ const Footer = () => {
             onChange={handleChange('panel2')}
           >
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<MdExpandMore size={'1.2em'} />}
               aria-controls="panel2bh-content"
               id="panel2bh-header"
             >
@@ -244,7 +246,7 @@ const Footer = () => {
             onChange={handleChange('panel3')}
           >
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<MdExpandMore size={'1.2em'} />}
               aria-controls="panel3bh-content"
               id="panel3bh-header"
             >
@@ -283,7 +285,7 @@ const Footer = () => {
             onChange={handleChange('panel4')}
           >
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<MdExpandMore size={'1.2em'} />}
               aria-controls="panel4bh-content"
               id="panel4bh-header"
             >
@@ -317,12 +319,13 @@ const Footer = () => {
           </Accordion>
 
           <Accordion
+            defaultExpanded
             style={{ fontFamily: 'var(--font-poppins)' }}
             expanded={expanded === 'panel5'}
             onChange={handleChange('panel5')}
           >
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<MdExpandMore size={'1.2em'} />}
               aria-controls="panel5bh-content"
               id="panel5bh-header"
             >
