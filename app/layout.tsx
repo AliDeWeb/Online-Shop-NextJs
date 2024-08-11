@@ -45,6 +45,7 @@ const montserrat = localFont({
 
 // Components
 import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/Navbar/Navbar';
 import AosInit from '@/components/AosInit/AosInit';
 
@@ -70,6 +71,7 @@ export default function RootLayout({
         <Header />
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
