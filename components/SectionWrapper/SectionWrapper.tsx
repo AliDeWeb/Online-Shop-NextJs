@@ -16,7 +16,7 @@ const SectionWrapper = ({
     <div className="py-10">
       <div className="container">
         <div className="mb-[30px]">
-          <h2 className="text-center font-montserrat text-3xl font-bold capitalize text-[#555555]">
+          <h2 className="text-center font-montserrat text-xl font-bold capitalize text-[#555555] sm:text-2xl lg:text-3xl">
             {title}
           </h2>
           <p className="mt-2.5 text-center font-poppins text-sm font-light capitalize text-[#777777]">
